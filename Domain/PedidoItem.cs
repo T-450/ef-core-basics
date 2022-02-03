@@ -1,8 +1,7 @@
 ﻿namespace curso_ef_core.Domain;
 
-public class PedidoItem
+public class PedidoItem : Entity
 {
-    public int Id { get; set; }
     public int PedidoId { get; set; }
     public Pedido Pedido { get; set; }
     public int ProdutoId { get; set; }

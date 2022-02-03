@@ -10,7 +10,7 @@ namespace curso_ef_core.Data.Configurations
         {
             builder.ToTable("Clientes");
             builder.HasKey(c => c.Id);
-            builder.Property(c => c.Nome).HasColumnName("Phone").HasColumnType("VARCHAR(80)").IsRequired();
+            builder.Property(c => c.Nome).HasColumnType("VARCHAR(80)").IsRequired();
             builder.Property(c => c.Telefone).HasColumnType("CHAR(11)").IsRequired();
             builder.Property(c => c.CEP).HasColumnType("CHAR(8)").IsRequired();
             builder.Property(c => c.Estado).HasColumnType("CHAR(2)").IsRequired();

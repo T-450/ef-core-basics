@@ -2,9 +2,8 @@
 
 namespace curso_ef_core.Domain
 {
-    public class Pedido
+    public class Pedido : Entity
     {
-        public int Id { get; set; }
         public int ClienteId { get; set; }
         public Cliente Cliente { get; set; }
         public DateTime IniciadoEm { get; set; }

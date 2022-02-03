@@ -1,8 +1,7 @@
 ﻿namespace curso_ef_core.Domain
 {
-    public class Cliente
+    public class Cliente : Entity
     {
-        public int Id { get; set; }
         public string Nome { get; set; }
         public string Telefone { get; set; }
         public string CEP { get; set; }

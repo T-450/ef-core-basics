@@ -2,9 +2,8 @@
 
 namespace curso_ef_core.Domain
 {
-    public class Produto
+    public class Produto : Entity
     {
-        public int Id { get; set; }
         public string CodigoBarras { get; set; }
         public string Descricao { get; set; }
         public decimal Valor { get; set; }
